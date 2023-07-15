@@ -1,0 +1,24 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    height: 100%;
+    overflow-x: hidden;
+    display: grid;
+    
+   /*👉 primeira coluna da esquerda o aside tem 256px FIXO👈*/
+/*👉   agora a coluna mais gorda ela tem que ser flex, flexivel entao 1fr👈*/
+/*👉utilizamos 1fr para dizer para o grid que algo vai ser flexivel👈*/
+    grid-template-columns: 256px 1fr;
+    gap: 2rem;
+
+    align-items: flex-start;
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    
+    }
+ 
+}

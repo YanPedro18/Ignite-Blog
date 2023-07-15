@@ -1,0 +1,18 @@
+:root {
+    --gray-800: #202024;
+}
+
+.header {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    background-color: var(--gray-800);
+}
+
+.header > img {
+    margin-right: 1%;
+}
+

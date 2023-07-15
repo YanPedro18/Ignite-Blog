@@ -1,0 +1,114 @@
+
+.headerAuth {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerAuth > time {
+    color: var(--gray-400);
+}
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.authorInfo {
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+}
+
+.authorInfo span {
+    color: var(--gray-400);
+    line-height: 1.6;
+}
+.posts + .posts {
+    margin-top: 2rem;
+}
+
+.content {
+    line-height: 1.6;
+    margin-top: 1.5rem;
+}
+
+.content p {
+    margin-top: 1rem;
+}
+
+.content a {
+    font-weight: bold;
+    color: var(--green-500);
+    text-decoration: none;
+}
+
+.content a:hover {
+    font-weight: bold;
+    color: #02996c;
+    text-decoration: none;
+}
+
+.posts {
+    background-color: var(--gray-800);
+    border-radius: 8px;
+    padding: 2.5rem;
+  /*👉  height: 530px;👈*/
+}
+
+.commentForm {
+    width: 96%;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  /*👉  padding-bottom: 2.5rem;👈*/
+    border-top: 1px solid var(--gray-600);
+}
+
+.commentForm footer {
+    visibility: hidden;
+    max-height: 0;
+}
+/*👉olha se houver um focus em qualquer input ou qualquer elemento dentro do comment eu quero aplicar estilo, no caso o footer/botao👈*/
+.commentForm:focus-within footer {
+    visibility: visible;
+    max-height: none;
+}
+
+.commentForm > strong {
+    line-height: 1.6;
+    color:  var(--gray-100);
+}
+
+.commentForm textarea {
+    width: 100%;
+    background-color: var(--gray-900);
+    border: 0;
+    resize: none;
+    height: 6rem;
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    line-height: 1.4;
+    margin-top: 1rem;
+}
+
+.commentForm button[type=submit] {
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+    color: var(--white);
+    background: var(--green-500);
+    font-weight: bold;
+    transition: background-color 0.1s;
+}
+
+.commentForm button[type=submit]:not(:disabled):hover {
+    background: var(--green-300);
+    transition: background-color 0.1s;
+}
+
+.commentForm button[type=submit]:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}

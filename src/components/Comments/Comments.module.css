@@ -1,0 +1,88 @@
+.comments {
+background-color: var(--gray-800);
+margin-top: 1rem;
+}
+
+.headerAuthors {
+display: flex;
+
+justify-content: space-between;
+
+}
+.authors img{
+    width: 3rem;
+    margin-right: 1rem;
+    border-radius: 8px;
+}
+
+.authors {
+    display: flex;
+    align-items: flex-start;
+}
+
+.content {
+    border-radius: 9px;
+    background: var(--gray-700);
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.text {
+    display: flex;
+    margin: 1rem;
+    flex-direction: column;
+}
+.text > strong {
+    color: var(--gray-100);
+    line-height: 1.6;
+}
+.text > strong > span {
+    color: var(--gray-400);
+}
+.text time {
+    color: var(--gray-400);
+    font-size: 12px;
+}
+.icon {
+    cursor: pointer;
+    margin: 1rem;
+}
+
+.icon svg:hover {
+    color: var(--green-300);
+}
+
+.liked {
+    display: flex;
+    cursor: pointer;
+    margin-top: 1.13rem;
+    align-items: center;
+    color: var(--gray-400);
+    margin-bottom: 1.62rem;
+}
+.liked:hover {
+    color: var(--green-300);
+}
+.liked  svg {
+    margin-right: 0.5rem;
+}
+
+.animation {
+    animation: identifier 2s 200ms;
+}
+
+@keyframes identifier {
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(-20px);}
+    100%{transform: translateY(0px);}
+}
+@media screen and (max-width: 768px) {
+    .icon {
+        position: absolute;
+       right: 12%;
+    }
+}
